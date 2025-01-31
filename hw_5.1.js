@@ -13,4 +13,4 @@ function pow(x, y) {
     return result;
 };
 
-console.log(pow(2, 4));
+console.log(pow(3, 3));
