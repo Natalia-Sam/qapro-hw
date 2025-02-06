@@ -6,10 +6,19 @@
 
 
 function pow(x, y) {
-    let result = x;
-    for (let i = 1; i < y; i++) {
-        result *= x;
-    };
+    let result = 1;
+    let iterationY = y;
+    if (y < 0) {
+        iterationY *= -1;
+    }
+
+    for (let i = 1; i <= iterationY; i++) {
+        if (y >= 0) {
+            result *= x;
+        } else {
+            result /= x;
+        }
+    }
     return result;
 };
 
