@@ -6,7 +6,7 @@
 
 // Added space to the exceptions to avoid searching for matches between 2 different words (validation results like 'ful Jo', 'yful H')
 // Option 1 - searching with regExp without adding an additional variable
-const pattern = /[^Aa ]{6}?/g;
+const pattern = /[^Aa\s]{6}?/g;
 const str = "Wonderful Joyful Happiness Time Task Apple";
 console.log(str.match(pattern));
 
