@@ -23,6 +23,7 @@ var arr = [
 ];
 
 const trustedEmails = arr.filter(entry => {
+    //const pattern = /^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)?@(gmail\.com|yahoo\.com)$/;
     const pattern = /^[a-zA-Z0-9]+\.[a-zA-Z0-9]+?(@gmail\.com|@yahoo\.com)$/;
     return pattern.test(entry.email);
 }).map(entry => entry.email);
